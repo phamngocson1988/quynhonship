@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-08-09 07:27:44
+/* Smarty version 3.1.31, created on 2017-08-14 11:32:29
   from "C:\xampp\htdocs\quynhonship\backend\views\user\edit.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_598a9d50cd28c9_36147845',
+  'unifunc' => 'content_59916e2de972a1_61276387',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a991366ef3f110dfe136ef52001403b20984419b' => 
     array (
       0 => 'C:\\xampp\\htdocs\\quynhonship\\backend\\views\\user\\edit.tpl',
-      1 => 1502256461,
+      1 => 1502256677,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_598a9d50cd28c9_36147845 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59916e2de972a1_61276387 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <?php
@@ -38,7 +38,7 @@ function content_598a9d50cd28c9_36147845 (Smarty_Internal_Template $_smarty_tpl)
   <div class="col-md-12">
     <div class="x_panel">
       <div class="x_title">
-        <h2>Create User</h2>
+        <h2>Change User Role</h2>
         <div class="clearfix"></div>
       </div>
       <div class="x_content">

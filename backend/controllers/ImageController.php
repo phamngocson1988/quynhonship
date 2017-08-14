@@ -4,11 +4,10 @@ namespace backend\controllers;
 use Yii;
 use common\components\override\Controller;
 use yii\filters\AccessControl;
-use yii\data\Pagination;
+use common\forms\FetchImageForm;
+use yii\helpers\Url;
 use common\forms\UploadImageForm;
 use yii\web\UploadedFile;
-use yii\web\Response;
-use common\forms\FetchImageForm;
 use common\forms\DeleteImageForm;
 
 /**
@@ -34,10 +33,19 @@ class ImageController extends Controller
         ];
     }
 
-    /**
-     * Show the list of posts
-     */
     public function actionIndex()
+    {
+        $request = Yii::$app->request;
+        
+        $links = [
+            'ajax_load' => Url::to(['image/ajax-load']),
+            'image_popup' => Url::to(['image/popup']),
+        ];
+        $this->view->registerJsFile('@web/js/ajax_action.js', ['depends' => [\yii\bootstrap\BootstrapAsset::className()]]);
+        return $this->render('index.tpl', ['links'=> $links]);
+    }    
+
+    public function actionAjaxLoad()
     {
         $request = Yii::$app->request;
         if ($request->isAjax) {
@@ -51,30 +59,23 @@ class ImageController extends Controller
             $models = $form->fetch();
             $total = $form->count();
             $html = "";
+            $template = $request->get('template', '_item');
             foreach ($models as $model) {
-                $html .= $this->renderPartial('_item.tpl',['model' => $model]);
+                $html .= $this->renderPartial("$template.tpl",['model' => $model]);
             }
-            Yii::$app->response->format = Response::FORMAT_JSON;
-            return [
-                'status' => true,
+            $data = [
                 'items' => $html,
                 'total' => $total
             ];
-        } else {
-            $this->view->registerJsFile('js/ajax_paging.js', ['depends' => ['\yii\bootstrap\BootstrapAsset']]);
+            return $this->renderJson(true, $data);
         }
-        
-        return $this->render('index.tpl');
     }    
 
     public function actionUpload()
     {
-        $this->view->registerCssFile('vendors/dropzone/dist/min/dropzone.min.css', ['depends' => ['\yii\bootstrap\BootstrapAsset']]);
-        $this->view->registerJsFile('vendors/dropzone/dist/min/dropzone.min.js', ['depends' => ['\yii\bootstrap\BootstrapAsset']]);
-        return $this->render('upload.tpl', [
-            // 'model' => $model,
-        ]);
-
+        $this->view->registerCssFile('vendors/dropzone/dist/min/dropzone.min.css', ['depends' => [\yii\bootstrap\BootstrapAsset::className()]]);
+        $this->view->registerJsFile('vendors/dropzone/dist/min/dropzone.min.js', ['depends' => [\yii\bootstrap\BootstrapAsset::className()]]);
+        return $this->render('upload.tpl');
     }
 
     public function actionAjaxUpload()
@@ -101,6 +102,9 @@ class ImageController extends Controller
                     $info['id'] = $imageId = $image->getId();
                     $info['thumb'] = $image->getUrl($size);
                     $info['src'] = $image->getUrl();
+                    foreach (Yii::$app->params['thumbnails'] as $thumbnail) {
+                        $info['size'][$thumbnail] = $image->getUrl($thumbnail);
+                    }
                     $imageArray[$imageId] = $info;
                 }
 
@@ -129,5 +133,13 @@ class ImageController extends Controller
         }
         Yii::$app->response->format = Response::FORMAT_JSON;
         return $result;
+    }
+
+    public function actionPopup()
+    {
+        $request = Yii::$app->request;
+        $result = ['status' => false];
+        $defaultThumbnail = '150x150';
+        return $this->renderPartial('popup.tpl', ['default_thumbnail' => $defaultThumbnail]);
     }
 }

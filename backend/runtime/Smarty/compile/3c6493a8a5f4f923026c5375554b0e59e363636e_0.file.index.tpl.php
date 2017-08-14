@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-08-09 07:33:09
+/* Smarty version 3.1.31, created on 2017-08-14 11:32:22
   from "C:\xampp\htdocs\quynhonship\backend\views\user\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_598a9e95a7b408_18529122',
+  'unifunc' => 'content_59916e262395c5_87739161',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3c6493a8a5f4f923026c5375554b0e59e363636e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\quynhonship\\backend\\views\\user\\index.tpl',
-      1 => 1502256745,
+      1 => 1502336655,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_598a9e95a7b408_18529122 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59916e262395c5_87739161 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 <?php
@@ -39,7 +39,7 @@ function content_598a9e95a7b408_18529122 (Smarty_Internal_Template $_smarty_tpl)
 	<div class="col-md-12 col-sm-12 col-xs-12">
 	  <div class="x_panel">
 	    <div class="x_title">
-	      <h2>Users</small></h2>
+	      <h2>Users</h2>
 	      <div class="clearfix"></div>
 	    </div>
 

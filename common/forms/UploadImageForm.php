@@ -17,13 +17,6 @@ class UploadImageForm extends Model
      */
     public $imageFiles;
 
-    protected $thumbnails = [
-        'small' => '50x50', 
-        'medium' => '100x100',
-        'large' => '150x150',
-        'xlarge' => '300x300',
-    ];
-
     private $_images = [];
 
     public function rules()
@@ -33,9 +26,9 @@ class UploadImageForm extends Model
         ];
     }
 
-    public function getThumbnails()
+    public static function getThumbnails()
     {
-        return (array)$this->thumbnails;
+        return (array)Yii::$app->params['thumbnails'];
     }
 
     public function upload()
@@ -46,6 +39,7 @@ class UploadImageForm extends Model
 
         try {
             $transaction = Yii::$app->db->beginTransaction();
+            $thumbnails = self::getThumbnails();
             foreach ($this->imageFiles as $file) {
                 // Save database.
                 $fileModel = new TImage();
@@ -62,7 +56,8 @@ class UploadImageForm extends Model
                 $filePath = $fileModel->getPath();
                 $file->saveAs($filePath);
 
-                foreach ($this->getThumbnails() as $thumbSize) {
+
+                foreach ($thumbnails as $thumbSize) {
                     $fileModel->saveThumb($thumbSize);
                 }
                 $this->_images[] = $fileModel;

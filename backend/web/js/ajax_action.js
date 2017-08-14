@@ -105,7 +105,6 @@ function AjaxPaging(opts) {
         offset: 0,
         limit: 10,
         condition: null,
-
     }; 
 
     //constructor
@@ -309,3 +308,172 @@ function AjaxUploadImage(opts) {
 
     this.init(opts);
 };
+
+/**
+ * Manage images on popup
+ * var manager = new ImageManager();
+ */
+function ImageManager(opts) {
+    // default configuration properties
+    this.options = {
+        id: '#image-popup-form',
+    }; 
+    this.links = {
+        popup: '/image/popup',
+        load: '/image/ajax-load',
+        upload: '/image/ajax-upload',
+    };
+
+    // The element which call open popup
+    this.observer = null;
+
+    //constructor
+    this.init = function (opts) {
+        var that = this;
+        that.options = $.extend(that.options, opts);
+        that.load_popup();
+    };
+
+    this.open_popup = function() {
+        $(this.options.id).modal(); 
+    }
+
+    this.load_popup = function() {
+        var that = this;
+        $.ajax({
+            url: that.links.popup,
+            type: 'GET',
+            dataType : 'html',
+            success: function (result, textStatus, jqXHR) {
+                that.success(result);
+            },
+            error: function(xhr, status, error) {
+                var err = eval("(" + xhr.responseText + ")");
+                alert(err.Message);
+            }
+        });
+    }
+
+    //success
+    this.success = function(result) {
+        $('body').append(result);  
+        var that = this;
+        // Load images
+        var paging = new AjaxPaging({
+            auto_first_load: true,
+            request_url: this.links.load,
+            container: '#image-popup-form #popup-items',
+            condition: {template: '_popup_item'},
+            limit: 12
+        });
+
+        $(this.options.id + ' #load_more_popup').on('click', function(){
+            paging.load();
+        });
+
+        // Close model
+        $(this.options.id).on('hide.bs.modal', function() {
+            that.observer = null;
+        });
+
+        // OK function
+        $(this.options.id).on('click', '[function="ok"]', function() {
+            if (that.observer != null) {
+                var size = $(that.options.id).find("[role='size'] a.selected").attr('value');
+                var objs = $(that.options.id).find('.thumbnail.selected').find('input[name="'+size+'"]');
+                
+
+                if (that.observer.type == 'single') {
+                    data = {};
+                    data.id = $(objs).data('id');
+                    data.src = $(objs).val();
+                } else {
+                    data = [];
+                    $.each(objs, function( index, obj ) {
+                        var item = {};
+                        item.id = $(obj).data('id');
+                        item.src = $(obj).val();
+                        data[index] = item;
+                    });
+                }
+                that.observer.callback(data);
+            }
+            $(that.options.id).modal('hide');
+        });
+
+        // Upload function
+        var upload = new AjaxUploadImage({
+            request_url: this.links.upload,
+            file_element: this.options.id + ' #popup-upload-image',
+            trigger_element: "[function='upload']"
+        });   
+        upload.callback = function(images) {
+            var items = '';
+            $.each(images, function( index, img ) {
+                items += '<div class="col-md-2 image-item" data-id="'+img.id+'">';
+                items += '<div class="thumbnail" style="width: 100%; height: 100%">';
+                items += '<div class="view view-first">';
+                items += '<img style="width: 100%; display: block;" src="'+img.thumb+'" alt="image" />'
+                $.each(img.size, function( size, src ) {
+                    items += '<input type="hidden" name="'+size+'" value="'+src+'" data-id="'+img.id+'">';
+                });
+                items += '</div>';
+                items += '</div>';
+                items += '</div>';
+            });
+            $('#popup-items').prepend($(items));
+        }
+
+        // Choose size
+        $(this.options.id).on("click", "[role='size'] a", function() {
+            $(this).closest('ul').find('a').removeClass('selected');
+            $(this).addClass('selected'); 
+        });
+
+        // Choose image(s)
+        $(this.options.id).on("click", ".thumbnail", function() {
+            if (that.observer == null) {
+                return;
+            }
+            if ($(this).hasClass('selected')) {
+                $(this).removeClass('selected');
+            } else {
+                if (that.observer.type == 'single') {
+                    $(this).closest('#popup-items').find('.thumbnail').removeClass('selected');
+                }
+                $(this).addClass('selected'); 
+            }
+        });
+
+    }
+
+    this.attach = function(observer) {
+        this.observer = observer;
+    }
+
+    this.init(opts);
+};
+
+/**
+ * Open image manager popup
+ * @var ImageManager manager
+ * @var json options
+ * var $(selector).selectImage(manager, options);
+ */
+$.fn.selectImage = function(manager, opts) {
+    if (!manager) {
+        return false;
+    }
+    var options = {
+        type: 'single', //single | multiple
+        callback: function(objs) {
+            
+        }
+    };
+    options = $.extend(options, opts);
+
+    $(this).on('click', function() {
+        manager.attach(options);
+        manager.open_popup();
+    });
+}

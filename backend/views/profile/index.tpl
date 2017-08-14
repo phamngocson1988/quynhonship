@@ -22,12 +22,7 @@
             </div>
           </div>
           <h3>{$user->getName()}</h3>
-
           <a class="btn btn-success" action="change-avatar"><i class="fa fa-edit m-right-xs"></i>Change Avatar</a>
-          <input type="file" name="change-avatar" id="change-avatar" style="display: none">
-
-          <br />
-
         </div>
 
         <div class="col-md-9 col-sm-9 col-xs-12">
@@ -93,33 +88,26 @@
 {registerJs}
 <!-- inline scripts related to this page -->
 {literal}
-
-// Change Avatar
-var upload = new AjaxUploadImage({
-  request_url: '{/literal}{$links.upload_image}{literal}',
-  file_element: '#change-avatar',
-  trigger_element: "a[action='change-avatar']"
-});   
-upload.callback = function(images) {
-  $.each(images, function( index, img ) {
+var manager = new ImageManager();
+$("a[action='change-avatar']").selectImage(manager, {
+  callback: function(img) {
+    var thumb = img.src;
+    var id = img.id;
     $.ajax({
       url: '{/literal}{$links.change_avatar}{literal}',
       type: 'POST',
       dataType : 'json',
-      data: {image_id: index},
+      data: {image_id: id},
       success: function (result, textStatus, jqXHR) {
         if (result.status == false) {
           console.log(result.error);
           return false;
         } else {
-          $('[global="avatar_{/literal}{$user->getId()}{literal}"]').attr('src', img.thumb);
+          $('[global="avatar_{/literal}{$user->getId()}{literal}"]').attr('src', thumb);
         }
       },
     });
-  });
-}
-
-
-
+  }
+});
 {/literal}
 {/registerJs}

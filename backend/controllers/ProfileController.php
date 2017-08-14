@@ -59,7 +59,7 @@ class ProfileController extends Controller
             'edit' => Url::to(['profile/edit']),
             'upload_image' => Url::to(['image/ajax-upload']),
         ];
-        $this->view->registerJsFile('@web/js/ajax_action.js', ['depends' => ['\yii\web\JqueryAsset']]);
+        $this->view->registerJsFile('@web/js/ajax_action.js', ['depends' => [\yii\bootstrap\BootstrapAsset::className()]]);
         return $this->render('index.tpl', [
             'user' => $user,
             'links' => $links
