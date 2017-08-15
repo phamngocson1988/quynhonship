@@ -5420,3 +5420,2863 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1502438361.061
     'REQUEST_TIME' => 1502438361
 ]
+2017-08-15 05:02:17 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\forms\CreatePostForm::contact_name in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\helpers\BaseHtml.php(2044): yii\base\Component->__get('contact_name')
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\helpers\BaseHtml.php(1246): yii\helpers\BaseHtml::getAttributeValue(Object(common\forms\CreatePostForm), 'contact_name')
+#2 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\helpers\BaseHtml.php(1295): yii\helpers\BaseHtml::activeInput('text', Object(common\forms\CreatePostForm), 'contact_name', Array)
+#3 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\widgets\ActiveField.php(386): yii\helpers\BaseHtml::activeTextInput(Object(common\forms\CreatePostForm), 'contact_name', Array)
+#4 C:\xampp\htdocs\quynhonship\backend\runtime\Smarty\compile\8a3100aba166f9d39f1cfeea37ce54958c83d0ae_0.file.create.tpl.php(118): yii\widgets\ActiveField->textInput()
+#5 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_template_resource_base.php(128): content_5992643931ec11_32105462(Object(Smarty_Internal_Template))
+#6 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(172): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#7 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(206): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#8 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(216): Smarty_Internal_Template->render(false, 0)
+#9 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(107): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 0)
+#10 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2-smarty\ViewRenderer.php(253): Smarty_Internal_TemplateBase->fetch()
+#11 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\View.php(246): yii\smarty\ViewRenderer->render(Object(yii\web\View), 'C:\\xampp\\htdocs...', Array)
+#12 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\PostController))
+#13 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('create.tpl', Array, Object(backend\controllers\PostController))
+#14 C:\xampp\htdocs\quynhonship\backend\controllers\PostController.php(83): yii\base\Controller->render('create.tpl', Array)
+#15 [internal function]: backend\controllers\PostController->actionCreate()
+#16 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#19 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('post/create', Array)
+#20 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#22 {main}
+2017-08-15 05:02:16 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '52784'
+    'REDIRECT_URL' => '/post/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/post/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502766136.397
+    'REQUEST_TIME' => 1502766136
+]
+2017-08-15 05:02:17 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/uploadimage.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/uploadimage....', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 05:02:17 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '52789'
+    'REDIRECT_URL' => '/js/uploadimage.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/uploadimage.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502766137.541
+    'REQUEST_TIME' => 1502766137
+]
+2017-08-15 05:04:41 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/uploadimage.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/uploadimage....', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 05:04:41 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '52813'
+    'REDIRECT_URL' => '/js/uploadimage.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/uploadimage.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502766281.881
+    'REQUEST_TIME' => 1502766281
+]
+2017-08-15 05:04:42 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/uploadimage.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/uploadimage....', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 05:04:42 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '52811'
+    'REDIRECT_URL' => '/js/uploadimage.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/uploadimage.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502766282.286
+    'REQUEST_TIME' => 1502766282
+]
+2017-08-15 05:05:06 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/uploadimage.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/uploadimage....', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 05:05:06 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '52830'
+    'REDIRECT_URL' => '/js/uploadimage.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/uploadimage.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502766306.878
+    'REQUEST_TIME' => 1502766306
+]
+2017-08-15 05:09:54 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/uploadimage.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/uploadimage....', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 05:09:54 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '52898'
+    'REDIRECT_URL' => '/js/uploadimage.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/uploadimage.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502766594.784
+    'REQUEST_TIME' => 1502766594
+]
+2017-08-15 05:09:55 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/uploadimage.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/uploadimage....', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 05:09:55 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '52899'
+    'REDIRECT_URL' => '/js/uploadimage.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/uploadimage.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502766595.057
+    'REQUEST_TIME' => 1502766595
+]
+2017-08-15 05:10:21 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/uploadimage.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/uploadimage....', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 05:10:21 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '52915'
+    'REDIRECT_URL' => '/js/uploadimage.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/uploadimage.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502766621.189
+    'REQUEST_TIME' => 1502766621
+]
+2017-08-15 05:13:00 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/uploadimage.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/uploadimage....', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 05:12:59 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '52944'
+    'REDIRECT_URL' => '/js/uploadimage.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/uploadimage.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502766779.977
+    'REQUEST_TIME' => 1502766779
+]
+2017-08-15 05:16:52 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][Error] Error: Class 'common\forms\ArrayHelper' not found in C:\xampp\htdocs\quynhonship\common\forms\CreatePostForm.php:73
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\backend\runtime\Smarty\compile\8a3100aba166f9d39f1cfeea37ce54958c83d0ae_0.file.create.tpl.php(107): common\forms\CreatePostForm->getCategories()
+#1 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_template_resource_base.php(128): content_599267a4c23aa1_46078155(Object(Smarty_Internal_Template))
+#2 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(172): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#3 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(206): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#4 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(216): Smarty_Internal_Template->render(false, 0)
+#5 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(107): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 0)
+#6 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2-smarty\ViewRenderer.php(253): Smarty_Internal_TemplateBase->fetch()
+#7 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\View.php(246): yii\smarty\ViewRenderer->render(Object(yii\web\View), 'C:\\xampp\\htdocs...', Array)
+#8 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\PostController))
+#9 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('create.tpl', Array, Object(backend\controllers\PostController))
+#10 C:\xampp\htdocs\quynhonship\backend\controllers\PostController.php(83): yii\base\Controller->render('create.tpl', Array)
+#11 [internal function]: backend\controllers\PostController->actionCreate()
+#12 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#15 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('post/create', Array)
+#16 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2017-08-15 05:16:52 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '52980'
+    'REDIRECT_URL' => '/post/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/post/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502767012.48
+    'REQUEST_TIME' => 1502767012
+]
+2017-08-15 05:16:53 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2017-08-15 05:16:52 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '52980'
+    'REDIRECT_URL' => '/post/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/post/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502767012.48
+    'REQUEST_TIME' => 1502767012
+]
+2017-08-15 05:16:53 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/uploadimage.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/uploadimage....', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 05:16:53 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '52979'
+    'REDIRECT_URL' => '/js/uploadimage.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/uploadimage.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502767013.028
+    'REQUEST_TIME' => 1502767013
+]
+2017-08-15 05:17:13 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/uploadimage.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/uploadimage....', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 05:17:13 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '53002'
+    'REDIRECT_URL' => '/js/uploadimage.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/uploadimage.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502767033.206
+    'REQUEST_TIME' => 1502767033
+]
+2017-08-15 05:17:45 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: common\models\Category::getName() in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\backend\runtime\Smarty\compile\b7e58f199fc516355ebdfa3495e1f59bc7836f4e_0.file.index.tpl.php(53): yii\base\Component->__call('getName', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_template_resource_base.php(128): content_598c045626a847_56080430(Object(Smarty_Internal_Template))
+#2 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(172): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#3 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(206): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#4 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(216): Smarty_Internal_Template->render(false, 0)
+#5 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(107): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 0)
+#6 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2-smarty\ViewRenderer.php(253): Smarty_Internal_TemplateBase->fetch()
+#7 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\View.php(246): yii\smarty\ViewRenderer->render(Object(yii\web\View), 'C:\\xampp\\htdocs...', Array)
+#8 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\CategoryController))
+#9 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index.tpl', Array, Object(backend\controllers\CategoryController))
+#10 C:\xampp\htdocs\quynhonship\backend\controllers\CategoryController.php(43): yii\base\Controller->render('index.tpl', Array)
+#11 [internal function]: backend\controllers\CategoryController->actionIndex()
+#12 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#15 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('category/index', Array)
+#16 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2017-08-15 05:17:45 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/category/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '53015'
+    'REDIRECT_URL' => '/category/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/category/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502767065.827
+    'REQUEST_TIME' => 1502767065
+]
+2017-08-15 05:18:43 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/uploadimage.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/uploadimage....', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 05:18:43 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '53026'
+    'REDIRECT_URL' => '/js/uploadimage.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/uploadimage.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502767123.872
+    'REQUEST_TIME' => 1502767123
+]
+2017-08-15 05:19:08 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/uploadimage.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/uploadimage....', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 05:19:08 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '53048'
+    'REDIRECT_URL' => '/js/uploadimage.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/uploadimage.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502767148.335
+    'REQUEST_TIME' => 1502767148
+]
+2017-08-15 05:21:03 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/uploadimage.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/uploadimage....', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 05:21:03 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '53064'
+    'REDIRECT_URL' => '/js/uploadimage.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/uploadimage.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502767263.04
+    'REQUEST_TIME' => 1502767263
+]
+2017-08-15 05:21:03 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/uploadimage.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/uploadimage....', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 05:21:03 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '53066'
+    'REDIRECT_URL' => '/js/uploadimage.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/uploadimage.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502767263.312
+    'REQUEST_TIME' => 1502767263
+]
+2017-08-15 05:21:28 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/uploadimage.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/uploadimage....', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 05:21:28 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '53108'
+    'REDIRECT_URL' => '/js/uploadimage.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/uploadimage.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502767288.721
+    'REQUEST_TIME' => 1502767288
+]
+2017-08-15 05:21:29 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/uploadimage.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/uploadimage....', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 05:21:29 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '53107'
+    'REDIRECT_URL' => '/js/uploadimage.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/uploadimage.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502767289.16
+    'REQUEST_TIME' => 1502767289
+]
+2017-08-15 05:21:50 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/ajax_actions.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/ajax_actions...', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 05:21:50 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '53148'
+    'REDIRECT_URL' => '/js/ajax_actions.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/ajax_actions.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502767310.163
+    'REQUEST_TIME' => 1502767310
+]
+2017-08-15 05:21:50 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/ajax_actions.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/ajax_actions...', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 05:21:50 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '53146'
+    'REDIRECT_URL' => '/js/ajax_actions.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/ajax_actions.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502767310.526
+    'REQUEST_TIME' => 1502767310
+]
+2017-08-15 05:25:32 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: common\models\Post::created_date in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\db\BaseActiveRecord.php(306): yii\base\Component->__set('created_date', 1502767532)
+#1 C:\xampp\htdocs\quynhonship\common\forms\CreatePostForm.php(66): yii\db\BaseActiveRecord->__set('created_date', 1502767532)
+#2 C:\xampp\htdocs\quynhonship\common\forms\CreatePostForm.php(43): common\forms\CreatePostForm->getPost()
+#3 C:\xampp\htdocs\quynhonship\backend\controllers\PostController.php(74): common\forms\CreatePostForm->save()
+#4 [internal function]: backend\controllers\PostController->actionCreate()
+#5 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#8 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('post/create', Array)
+#9 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-08-15 05:25:32 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_POST = [
+    '_csrf-backend' => 'QW5zc2llNzMyHBsbDDxDUQc9JwtQL39VNjgfXghSAlkNAh1AOFEFWQ=='
+    'CreatePostForm' => [
+        'title' => 'Bún đậu mắm tôm'
+        'content' => '<p>Nh&agrave; h&agrave;ng&nbsp;B&uacute;n đậu mắm t&ocirc;m nằm rải r&aacute;c ở nhiều nơi tr&ecirc;n thế giới</p>
+'
+        'category_id' => '1'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '442'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://admin.quynhonship.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '53242'
+    'REDIRECT_URL' => '/post/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/post/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502767532.699
+    'REQUEST_TIME' => 1502767532
+]
+2017-08-15 05:26:08 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Unable to verify your data submission. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#2 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('post/create', Array)
+#3 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2017-08-15 05:26:08 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '442'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://admin.quynhonship.com'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '53250'
+    'REDIRECT_URL' => '/post/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/post/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502767568.195
+    'REQUEST_TIME' => 1502767568
+]
+2017-08-15 05:26:30 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: common\models\Post::getTitle() in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Component.php:285
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\backend\runtime\Smarty\compile\19d2e87b61e44246f0e6c6961063a09307b1dee2_0.file.index.tpl.php(78): yii\base\Component->__call('getTitle', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_template_resource_base.php(128): content_59917eb76c35d0_38230982(Object(Smarty_Internal_Template))
+#2 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(172): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#3 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(206): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#4 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(216): Smarty_Internal_Template->render(false, 0)
+#5 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(107): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 0)
+#6 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2-smarty\ViewRenderer.php(253): Smarty_Internal_TemplateBase->fetch()
+#7 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\View.php(246): yii\smarty\ViewRenderer->render(Object(yii\web\View), 'C:\\xampp\\htdocs...', Array)
+#8 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\PostController))
+#9 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index.tpl', Array, Object(backend\controllers\PostController))
+#10 C:\xampp\htdocs\quynhonship\backend\controllers\PostController.php(47): yii\base\Controller->render('index.tpl', Array)
+#11 [internal function]: backend\controllers\PostController->actionIndex()
+#12 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#15 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('post/index', Array)
+#16 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2017-08-15 05:26:30 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '53263'
+    'REDIRECT_URL' => '/post/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/post/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502767590.349
+    'REQUEST_TIME' => 1502767590
+]
+2017-08-15 05:28:04 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][SmartyCompilerException]  --> Smarty Compiler: Syntax error in template "file:C:\xampp\htdocs\quynhonship\backend\views\post\index.tpl"  on line 31 "<td class=" ">{$model->title)}</td>"  - Unexpected ")", expected one of: "}" <-- 
+2017-08-15 05:28:04 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '53275'
+    'REDIRECT_URL' => '/post/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/post/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502767684.457
+    'REQUEST_TIME' => 1502767684
+]
+2017-08-15 06:22:38 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\widgets\ActiveField::tag in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\BaseYii.php(521): yii\base\Component->__set('tag', '')
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\widgets\ActiveField), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('yii\\widgets\\Act...', Array, Array)
+#5 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\widgets\\Act...', Array, Array)
+#6 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\widgets\ActiveForm.php(292): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\quynhonship\backend\runtime\Smarty\compile\8a3100aba166f9d39f1cfeea37ce54958c83d0ae_0.file.create.tpl.php(111): yii\widgets\ActiveForm->field(Object(common\forms\CreatePostForm), 'image_id', Array)
+#8 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_template_resource_base.php(128): content_5992770e49c985_06298745(Object(Smarty_Internal_Template))
+#9 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(172): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#10 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(206): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#11 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(216): Smarty_Internal_Template->render(false, 0)
+#12 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(107): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 0)
+#13 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2-smarty\ViewRenderer.php(253): Smarty_Internal_TemplateBase->fetch()
+#14 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\View.php(246): yii\smarty\ViewRenderer->render(Object(yii\web\View), 'C:\\xampp\\htdocs...', Array)
+#15 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\PostController))
+#16 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('create.tpl', Array, Object(backend\controllers\PostController))
+#17 C:\xampp\htdocs\quynhonship\backend\controllers\PostController.php(78): yii\base\Controller->render('create.tpl', Array)
+#18 [internal function]: backend\controllers\PostController->actionCreate()
+#19 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#21 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#22 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('post/create', Array)
+#23 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#25 {main}
+2017-08-15 06:22:38 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '56750'
+    'REDIRECT_URL' => '/post/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/post/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502770958.12
+    'REQUEST_TIME' => 1502770958
+]
+2017-08-15 06:22:54 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\widgets\ActiveField::tag in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\BaseYii.php(521): yii\base\Component->__set('tag', NULL)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\widgets\ActiveField), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('yii\\widgets\\Act...', Array, Array)
+#5 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\widgets\\Act...', Array, Array)
+#6 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\widgets\ActiveForm.php(292): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\quynhonship\backend\runtime\Smarty\compile\8a3100aba166f9d39f1cfeea37ce54958c83d0ae_0.file.create.tpl.php(111): yii\widgets\ActiveForm->field(Object(common\forms\CreatePostForm), 'image_id', Array)
+#8 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_template_resource_base.php(128): content_5992771e288fb3_31347924(Object(Smarty_Internal_Template))
+#9 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(172): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#10 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(206): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#11 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(216): Smarty_Internal_Template->render(false, 0)
+#12 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(107): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 0)
+#13 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2-smarty\ViewRenderer.php(253): Smarty_Internal_TemplateBase->fetch()
+#14 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\View.php(246): yii\smarty\ViewRenderer->render(Object(yii\web\View), 'C:\\xampp\\htdocs...', Array)
+#15 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\PostController))
+#16 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('create.tpl', Array, Object(backend\controllers\PostController))
+#17 C:\xampp\htdocs\quynhonship\backend\controllers\PostController.php(78): yii\base\Controller->render('create.tpl', Array)
+#18 [internal function]: backend\controllers\PostController->actionCreate()
+#19 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#20 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#21 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#22 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('post/create', Array)
+#23 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#25 {main}
+2017-08-15 06:22:53 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '56763'
+    'REDIRECT_URL' => '/post/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/post/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502770973.868
+    'REQUEST_TIME' => 1502770973
+]
+2017-08-15 06:23:07 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][SmartyCompilerException]  --> Smarty Compiler: Syntax error in template "file:C:\xampp\htdocs\quynhonship\backend\views\post\create.tpl"  on line 72 "{$form->field($model, 'image_id', ['inputOptions' => ['id' => 'image_id', 'tag' => null], 'template' => '{input}', ])->hiddenInput()->label(false)}"  - Unexpected "]" <-- 
+2017-08-15 06:23:06 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '56770'
+    'REDIRECT_URL' => '/post/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/post/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502770986.858
+    'REQUEST_TIME' => 1502770986
+]
+2017-08-15 06:25:06 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][ReflectionException] ReflectionException: Class form-groupa does not exist in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\di\Container.php:422
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\di\Container.php(422): ReflectionClass->__construct('form-groupa')
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\di\Container.php(362): yii\di\Container->getDependencies('form-groupa')
+#2 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('form-groupa', Array, Array)
+#3 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('form-groupa', Array, Array)
+#4 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\widgets\ActiveForm.php(292): yii\BaseYii::createObject(Array)
+#5 C:\xampp\htdocs\quynhonship\backend\runtime\Smarty\compile\8a3100aba166f9d39f1cfeea37ce54958c83d0ae_0.file.create.tpl.php(111): yii\widgets\ActiveForm->field(Object(common\forms\CreatePostForm), 'image_id', Array)
+#6 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_template_resource_base.php(128): content_599277a2657d88_74954657(Object(Smarty_Internal_Template))
+#7 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(172): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#8 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(206): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#9 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(216): Smarty_Internal_Template->render(false, 0)
+#10 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(107): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 0)
+#11 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2-smarty\ViewRenderer.php(253): Smarty_Internal_TemplateBase->fetch()
+#12 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\View.php(246): yii\smarty\ViewRenderer->render(Object(yii\web\View), 'C:\\xampp\\htdocs...', Array)
+#13 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\PostController))
+#14 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('create.tpl', Array, Object(backend\controllers\PostController))
+#15 C:\xampp\htdocs\quynhonship\backend\controllers\PostController.php(78): yii\base\Controller->render('create.tpl', Array)
+#16 [internal function]: backend\controllers\PostController->actionCreate()
+#17 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#18 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#19 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#20 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('post/create', Array)
+#21 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#23 {main}
+2017-08-15 06:25:06 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '56934'
+    'REDIRECT_URL' => '/post/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/post/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502771106.286
+    'REQUEST_TIME' => 1502771106
+]
+2017-08-15 06:25:22 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][ReflectionException] ReflectionException: Class form-group does not exist in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\di\Container.php:422
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\di\Container.php(422): ReflectionClass->__construct('form-group')
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\di\Container.php(362): yii\di\Container->getDependencies('form-group')
+#2 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('form-group', Array, Array)
+#3 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('form-group', Array, Array)
+#4 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\widgets\ActiveForm.php(292): yii\BaseYii::createObject(Array)
+#5 C:\xampp\htdocs\quynhonship\backend\runtime\Smarty\compile\8a3100aba166f9d39f1cfeea37ce54958c83d0ae_0.file.create.tpl.php(111): yii\widgets\ActiveForm->field(Object(common\forms\CreatePostForm), 'image_id', Array)
+#6 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_template_resource_base.php(128): content_599277b2a8db35_00169712(Object(Smarty_Internal_Template))
+#7 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_template_compiled.php(172): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#8 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_template.php(206): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#9 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(216): Smarty_Internal_Template->render(false, 0)
+#10 C:\xampp\htdocs\quynhonship\vendor\smarty\smarty\libs\sysplugins\smarty_internal_templatebase.php(107): Smarty_Internal_TemplateBase->_execute(Object(Smarty_Internal_Template), NULL, NULL, NULL, 0)
+#11 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2-smarty\ViewRenderer.php(253): Smarty_Internal_TemplateBase->fetch()
+#12 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\View.php(246): yii\smarty\ViewRenderer->render(Object(yii\web\View), 'C:\\xampp\\htdocs...', Array)
+#13 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\PostController))
+#14 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('create.tpl', Array, Object(backend\controllers\PostController))
+#15 C:\xampp\htdocs\quynhonship\backend\controllers\PostController.php(78): yii\base\Controller->render('create.tpl', Array)
+#16 [internal function]: backend\controllers\PostController->actionCreate()
+#17 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#18 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#19 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('create', Array)
+#20 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('post/create', Array)
+#21 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#23 {main}
+2017-08-15 06:25:22 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '56964'
+    'REDIRECT_URL' => '/post/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/post/create'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502771122.556
+    'REQUEST_TIME' => 1502771122
+]
+2017-08-15 06:32:29 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][Error] Error: Class 'backend\controllers\FetchCategoryForm' not found in C:\xampp\htdocs\quynhonship\backend\controllers\PostController.php:101
+Stack trace:
+#0 [internal function]: backend\controllers\PostController->actionEdit('2')
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('edit', Array)
+#4 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('post/edit', Array)
+#5 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2017-08-15 06:32:29 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_GET = [
+    'id' => '2'
+    '_pjax' => '#w0'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_X_CSRF_TOKEN' => 'V3BTdTZaal8kAjsdUwMePREjBw0PECI5ICY/WFdtXzUbHD1GZ25YNQ=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#w0'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '57316'
+    'REDIRECT_URL' => '/post/edit'
+    'REDIRECT_QUERY_STRING' => 'id=2&_pjax=%23w0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2&_pjax=%23w0'
+    'REQUEST_URI' => '/post/edit?id=2&_pjax=%23w0'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502771549.129
+    'REQUEST_TIME' => 1502771549
+]
+2017-08-15 06:32:29 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2017-08-15 06:32:29 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_GET = [
+    'id' => '2'
+    '_pjax' => '#w0'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_X_CSRF_TOKEN' => 'V3BTdTZaal8kAjsdUwMePREjBw0PECI5ICY/WFdtXzUbHD1GZ25YNQ=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#w0'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '57316'
+    'REDIRECT_URL' => '/post/edit'
+    'REDIRECT_QUERY_STRING' => 'id=2&_pjax=%23w0'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2&_pjax=%23w0'
+    'REQUEST_URI' => '/post/edit?id=2&_pjax=%23w0'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502771549.129
+    'REQUEST_TIME' => 1502771549
+]
+2017-08-15 06:32:29 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][Error] Error: Class 'backend\controllers\FetchCategoryForm' not found in C:\xampp\htdocs\quynhonship\backend\controllers\PostController.php:101
+Stack trace:
+#0 [internal function]: backend\controllers\PostController->actionEdit('2')
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('edit', Array)
+#4 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('post/edit', Array)
+#5 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2017-08-15 06:32:29 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '57322'
+    'REDIRECT_URL' => '/post/edit'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/post/edit?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502771549.452
+    'REQUEST_TIME' => 1502771549
+]
+2017-08-15 06:32:29 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2017-08-15 06:32:29 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '57322'
+    'REDIRECT_URL' => '/post/edit'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/post/edit?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502771549.452
+    'REQUEST_TIME' => 1502771549
+]
+2017-08-15 06:32:29 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "js/uploadimage.js". in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('js/uploadimage....', Array)
+#1 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\quynhonship\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\quynhonship\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-08-15 06:32:29 [127.0.0.1][1][6i0kll63tvvos8aiopjob15km0][info][application] $_COOKIE = [
+    '_csrf-backend' => '21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"srhheYtbFSTx9JHfwVl-a75jLln3Q42j\";}'
+    'advanced-backend' => '6i0kll63tvvos8aiopjob15km0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'admin.quynhonship.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://admin.quynhonship.com/post/edit?id=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,ja;q=0.6,ko;q=0.4,vi;q=0.2'
+    'HTTP_COOKIE' => '_csrf-backend=21f1fa191e44d6cb1b60f1e134ebaf2a7359e4e866023e653d8b451f059f6ddfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22srhheYtbFSTx9JHfwVl-a75jLln3Q42j%22%3B%7D; advanced-backend=6i0kll63tvvos8aiopjob15km0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ASUS\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7 Server at admin.quynhonship.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.1.7'
+    'SERVER_NAME' => 'admin.quynhonship.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs/quynhonship/backend/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/quynhonship/backend/web/index.php'
+    'REMOTE_PORT' => '57324'
+    'REDIRECT_URL' => '/js/uploadimage.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/js/uploadimage.js'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1502771549.554
+    'REQUEST_TIME' => 1502771549
+]

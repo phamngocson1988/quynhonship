@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-08-10 08:59:36
+/* Smarty version 3.1.31, created on 2017-08-15 05:17:21
   from "C:\xampp\htdocs\quynhonship\backend\views\category\create.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_598c04588ef063_14871488',
+  'unifunc' => 'content_599267c13a26d1_61480344',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '95c0b9b6f919e613859d20cf93d4479eb5770a43' => 
     array (
       0 => 'C:\\xampp\\htdocs\\quynhonship\\backend\\views\\category\\create.tpl',
-      1 => 1502340588,
+      1 => 1502351462,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_598c04588ef063_14871488 (Smarty_Internal_Template $_smarty_tpl) {
+function content_599267c13a26d1_61480344 (Smarty_Internal_Template $_smarty_tpl) {
 $viewRenderer=$_smarty_tpl->default_template_handler_func[0];
     $viewRenderer->widgets['blocks']['ActiveForm'] = 'yii\widgets\ActiveForm';
     try {
@@ -57,6 +57,11 @@ ob_start();
 
         <div class="form-group">
           <?php echo $_smarty_tpl->tpl_vars['form']->value->field($_smarty_tpl->tpl_vars['model']->value,'slug',array('labelOptions'=>array('class'=>'control-label col-md-3 col-sm-3 col-xs-12'),'inputOptions'=>array('class'=>'form-control col-md-7 col-xs-12'),'template'=>'{label}<div class="col-md-6 col-sm-6 col-xs-12">{input}</div>{error}'))->textInput();?>
+
+        </div>
+
+        <div class="form-group">
+          <?php echo $_smarty_tpl->tpl_vars['form']->value->field($_smarty_tpl->tpl_vars['model']->value,'parent_id',array('labelOptions'=>array('class'=>'control-label col-md-3 col-sm-3 col-xs-12'),'inputOptions'=>array('class'=>'form-control col-md-7 col-xs-12'),'template'=>'{label}<div class="col-md-6 col-sm-6 col-xs-12">{input}</div>'))->dropDownList($_smarty_tpl->tpl_vars['model']->value->getAvailableParent(),array('prompt'=>'Choose parent'));?>
 
         </div>
 

@@ -1,32 +1,32 @@
 <?php
 
-namespace backend\forms;
+namespace common\forms;
 
 use Yii;
 use common\components\override\FetchForm;
-use common\models\User;
+use common\models\Post;
 
 /**
- * FetchUserForm
+ * FetchPostForm is the model behind the contact form.
  */
-class FetchUserForm extends FetchForm
+class FetchPostForm extends FetchForm
 {
     public function fetch()
     {
         $command = $this->createCommand();
         $this->_list = $command->all();
-        
+        $this->_command = $command;
         return $this->getList();
     }
 
     protected function createCommand()
     {
-        $command = User::find();
+        $command = Post::find();
         $command = $this->setPagination($command);
         $order = sprintf("%s %s", $this->getOrderField(), $this->getOrder());
         $command->orderBy($order);
-        $command->with('avatarImage');
-        $this->_command = $command;
+        $command->with('category');
+        $command->with('user');
         return $command;
     }
 }

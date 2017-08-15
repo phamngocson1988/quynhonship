@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2017-08-10 08:59:34
+/* Smarty version 3.1.31, created on 2017-08-15 05:18:38
   from "C:\xampp\htdocs\quynhonship\backend\views\category\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.31',
-  'unifunc' => 'content_598c045626a847_56080430',
+  'unifunc' => 'content_5992680e90ecd4_87644560',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b7e58f199fc516355ebdfa3495e1f59bc7836f4e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\quynhonship\\backend\\views\\category\\index.tpl',
-      1 => 1502336810,
+      1 => 1502767117,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_598c045626a847_56080430 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5992680e90ecd4_87644560 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="clearfix"></div>
 <div class="row">
@@ -50,19 +50,19 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['model']->value) {
 ?>
 	            <tr class="even pointer">
-	              <td class=" "><?php echo $_smarty_tpl->tpl_vars['model']->value->getName();?>
+	              <td class=" "><?php echo $_smarty_tpl->tpl_vars['model']->value->name;?>
 </td>
 	              <td class=" "><?php echo $_smarty_tpl->tpl_vars['model']->value->getParentName();?>
 </td>
 	              		
 	              
-	              <td class=" "><?php echo $_smarty_tpl->tpl_vars['model']->value->getSlug();?>
+	              <td class=" "><?php echo $_smarty_tpl->tpl_vars['model']->value->slug;?>
 </td>
 	              <td class=" last">
-	              	<a href='<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0][0]->functionUrl(array('route'=>"category/edit",'id'=>$_smarty_tpl->tpl_vars['model']->value->getId()),$_smarty_tpl);?>
+	              	<a href='<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0][0]->functionUrl(array('route'=>"category/edit",'id'=>$_smarty_tpl->tpl_vars['model']->value->id),$_smarty_tpl);?>
 ' class="btn btn-primary btn-xs"><i class="fa fa-edit"></i></a>
 
-	              	<a href='<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0][0]->functionUrl(array('route'=>"category/change-visible",'id'=>$_smarty_tpl->tpl_vars['model']->value->getId()),$_smarty_tpl);?>
+	              	<a href='<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0][0]->functionUrl(array('route'=>"category/change-visible",'id'=>$_smarty_tpl->tpl_vars['model']->value->id),$_smarty_tpl);?>
 ' class="btn btn-primary btn-xs" action="visible-status">
 	              		<?php if ($_smarty_tpl->tpl_vars['model']->value->isVisible()) {?>
 	              		<i class="fa fa-eye"></i>

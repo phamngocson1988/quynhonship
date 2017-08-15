@@ -33,21 +33,6 @@ class Category extends ActiveRecord
             ->viaTable(ProductCategory::tableName(), ['category_id' => 'id']);
     }
 
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    public function getSlug()
-    {
-        return $this->slug;
-    }
-
     public function getParent()
     {
         return $this->hasOne(self::className(), ['id' => 'parent_id']);
@@ -61,13 +46,8 @@ class Category extends ActiveRecord
         }
     }
 
-    public function getVisible()
-    {
-        return (int)$this->visible;
-    }
-
     public function isVisible()
     {
-        return $this->getVisible() === self::VISIBLE;
+        return $this->visible === self::VISIBLE;
     }
 }

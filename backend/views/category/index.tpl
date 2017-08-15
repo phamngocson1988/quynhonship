@@ -22,15 +22,15 @@
 	          <tbody>
 	          	{foreach $models as $model}
 	            <tr class="even pointer">
-	              <td class=" ">{$model->getName()}</td>
+	              <td class=" ">{$model->name}</td>
 	              <td class=" ">{$model->getParentName()}</td>
 	              		
 	              
-	              <td class=" ">{$model->getSlug()}</td>
+	              <td class=" ">{$model->slug}</td>
 	              <td class=" last">
-	              	<a href='{url route="category/edit" id=$model->getId()}' class="btn btn-primary btn-xs"><i class="fa fa-edit"></i></a>
+	              	<a href='{url route="category/edit" id=$model->id}' class="btn btn-primary btn-xs"><i class="fa fa-edit"></i></a>
 
-	              	<a href='{url route="category/change-visible" id=$model->getId()}' class="btn btn-primary btn-xs" action="visible-status">
+	              	<a href='{url route="category/change-visible" id=$model->id}' class="btn btn-primary btn-xs" action="visible-status">
 	              		{if $model->isVisible()}
 	              		<i class="fa fa-eye"></i>
 	              		{else}
