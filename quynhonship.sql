@@ -1,6 +1,6 @@
 /*
 SQLyog Ultimate v12.09 (64 bit)
-MySQL - 10.1.21-MariaDB : Database - vnopening
+MySQL - 10.1.25-MariaDB : Database - quynhonship
 *********************************************************************
 */
 
@@ -9,7 +9,6 @@ MySQL - 10.1.21-MariaDB : Database - vnopening
 /*!40101 SET SQL_MODE=''*/;
 
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 /*Table structure for table `auth_assignment` */
@@ -23,6 +22,10 @@ CREATE TABLE `auth_assignment` (
   PRIMARY KEY (`item_name`,`user_id`),
   CONSTRAINT `auth_assignment_ibfk_1` FOREIGN KEY (`item_name`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+/*Data for the table `auth_assignment` */
+
+insert  into `auth_assignment`(`item_name`,`user_id`,`created_at`) values ('admin','2',1502703163),('root','1',1502210252);
 
 /*Table structure for table `auth_item` */
 
@@ -42,6 +45,10 @@ CREATE TABLE `auth_item` (
   CONSTRAINT `auth_item_ibfk_1` FOREIGN KEY (`rule_name`) REFERENCES `auth_rule` (`name`) ON DELETE SET NULL ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+/*Data for the table `auth_item` */
+
+insert  into `auth_item`(`name`,`type`,`description`,`rule_name`,`data`,`created_at`,`updated_at`) values ('admin',1,'Admin',NULL,NULL,1502210036,1502210036),('root',1,'Root Admin',NULL,NULL,1502210036,1502210036);
+
 /*Table structure for table `auth_item_child` */
 
 DROP TABLE IF EXISTS `auth_item_child`;
@@ -55,6 +62,10 @@ CREATE TABLE `auth_item_child` (
   CONSTRAINT `auth_item_child_ibfk_2` FOREIGN KEY (`child`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+/*Data for the table `auth_item_child` */
+
+insert  into `auth_item_child`(`parent`,`child`) values ('root','admin');
+
 /*Table structure for table `auth_rule` */
 
 DROP TABLE IF EXISTS `auth_rule`;
@@ -67,6 +78,8 @@ CREATE TABLE `auth_rule` (
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+/*Data for the table `auth_rule` */
+
 /*Table structure for table `category` */
 
 DROP TABLE IF EXISTS `category`;
@@ -75,24 +88,14 @@ CREATE TABLE `category` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `slug` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `parent` int(11) NOT NULL DEFAULT '0',
+  `parent_id` int(11) DEFAULT NULL,
   `visible` tinyint(4) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-/*Table structure for table `district` */
+/*Data for the table `category` */
 
-DROP TABLE IF EXISTS `district`;
-
-CREATE TABLE `district` (
-  `id` int(10) unsigned NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `type` varchar(30) NOT NULL,
-  `location` varchar(30) NOT NULL,
-  `province_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `provinceid` (`province_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+insert  into `category`(`id`,`name`,`slug`,`parent_id`,`visible`) values (1,'Ăn vặt','an-vat',NULL,1),(2,'Giải khát','giai-khat',NULL,1);
 
 /*Table structure for table `image` */
 
@@ -106,7 +109,11 @@ CREATE TABLE `image` (
   `created_at` int(11) NOT NULL,
   `created_by` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=72 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+/*Data for the table `image` */
+
+insert  into `image`(`id`,`name`,`extension`,`size`,`created_at`,`created_by`) values (1,'globe-35584_960_720','png','134788',1502272538,1),(2,'sale-now-on','jpg','28204',1502272655,1),(3,'store-keeper-md','png','43612',1502273209,1),(4,'store-keeper-md','png','43612',1502273251,1),(5,'store-keeper-md','png','43612',1502273281,1),(6,'3d-world-map-png-2','png','124217',1502273413,1),(7,'Desert','jpg','845941',1502703196,1),(8,'Chrysanthemum','jpg','879394',1502703198,1),(9,'Hydrangeas','jpg','595284',1502703200,1),(10,'Jellyfish','jpg','775702',1502703202,1),(11,'Koala','jpg','780831',1502703203,1),(12,'Lighthouse','jpg','561276',1502703204,1),(13,'Penguins','jpg','777835',1502703205,1),(14,'Tulips','jpg','620888',1502703207,1),(15,'360px-Vietnam_map','png','32273',1502703226,1),(16,'3d-world-map-png-2','png','124217',1502703227,1),(17,'13055460_1029079893846288_636276461657517137_n','jpg','48055',1502703228,1),(18,'Map_of_Vietnam','png','9257',1502703228,1),(19,'sale-now-on','jpg','28204',1502703229,1);
 
 /*Table structure for table `location` */
 
@@ -116,19 +123,26 @@ CREATE TABLE `location` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `slug` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `parent_id` int(11) DEFAULT NULL,
   `visible` tinyint(2) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+/*Data for the table `location` */
 
 /*Table structure for table `migration` */
 
 DROP TABLE IF EXISTS `migration`;
 
 CREATE TABLE `migration` (
-  `version` varchar(180) COLLATE utf8_unicode_ci NOT NULL,
+  `version` varchar(180) COLLATE utf8_vietnamese_ci NOT NULL,
   `apply_time` int(11) DEFAULT NULL,
   PRIMARY KEY (`version`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_vietnamese_ci;
+
+/*Data for the table `migration` */
+
+insert  into `migration`(`version`,`apply_time`) values ('m000000_000000_base',1502210008),('m140506_102106_rbac_init',1502210016);
 
 /*Table structure for table `post` */
 
@@ -137,89 +151,19 @@ DROP TABLE IF EXISTS `post`;
 CREATE TABLE `post` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `content` text COLLATE utf8_unicode_ci NOT NULL,
-  `type` tinyint(2) NOT NULL COMMENT '0: Dealer. 1: Cooperation',
+  `content` text COLLATE utf8_unicode_ci,
   `category_id` int(11) DEFAULT NULL,
-  `organization` tinyint(4) DEFAULT '0',
-  `location_id` int(11) DEFAULT NULL,
-  `user_id` int(11) NOT NULL,
-  `checked_by` int(11) DEFAULT NULL,
+  `image_id` int(11) DEFAULT NULL,
   `status` int(11) NOT NULL,
-  `contact_name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `contact_phone` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-  `contact_email` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `contact_facebook` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `contact_zalo` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_by` int(11) NOT NULL,
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-/*Table structure for table `post_image` */
+/*Data for the table `post` */
 
-DROP TABLE IF EXISTS `post_image`;
-
-CREATE TABLE `post_image` (
-  `post_id` int(10) unsigned NOT NULL,
-  `image_id` int(10) unsigned NOT NULL,
-  `is_main` tinyint(2) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`post_id`,`image_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-/*Table structure for table `post_tag` */
-
-DROP TABLE IF EXISTS `post_tag`;
-
-CREATE TABLE `post_tag` (
-  `post_id` int(10) unsigned NOT NULL,
-  `tag_id` int(10) unsigned NOT NULL,
-  PRIMARY KEY (`post_id`,`tag_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-/*Table structure for table `post_warning` */
-
-DROP TABLE IF EXISTS `post_warning`;
-
-CREATE TABLE `post_warning` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `post_id` int(11) NOT NULL,
-  `content` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `created_at` int(11) NOT NULL,
-  `created_by` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-/*Table structure for table `province` */
-
-DROP TABLE IF EXISTS `province`;
-
-CREATE TABLE `province` (
-  `id` int(10) unsigned NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `type` varchar(30) NOT NULL,
-  `visible` tinyint(4) NOT NULL DEFAULT '1',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-/*Table structure for table `setting` */
-
-DROP TABLE IF EXISTS `setting`;
-
-CREATE TABLE `setting` (
-  `key` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `value` text COLLATE utf8_unicode_ci,
-  PRIMARY KEY (`key`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-/*Table structure for table `tag` */
-
-DROP TABLE IF EXISTS `tag`;
-
-CREATE TABLE `tag` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+insert  into `post`(`id`,`title`,`content`,`category_id`,`image_id`,`status`,`created_by`,`created_at`,`updated_at`) values (1,'Bún đậu mắm tôm','<p>B&uacute;n đậu mắm t&ocirc;m nằm rải r&aacute;c khắp nơi tr&ecirc;n thế giới</p>\r\n',1,NULL,1,1,1502767590,1502767590),(2,'Bún đậu mắm tôm','<p>B&uacute;n đậu mắm t&ocirc;m gần s&acirc;n bay</p>\r\n',1,8,1,1,1502771544,1502771544);
 
 /*Table structure for table `user` */
 
@@ -242,9 +186,12 @@ CREATE TABLE `user` (
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL,
   `password` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `is_staff` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+/*Data for the table `user` */
+
+insert  into `user`(`id`,`name`,`phone`,`address`,`year_of_birth`,`gender`,`avatar`,`username`,`password_hash`,`password_reset_token`,`email`,`auth_key`,`status`,`created_at`,`updated_at`,`password`) values (1,'Phạm Ngọc Sơn','098803325','159 Lò Siêu, Quận 11, HCM',1988,0,17,'admin','$2y$13$OF/c1UT.RZjiZHQJJsOi4eaud5UeXKoHeyO1N8GfJV3LveqtbqAZ6','','admin@gmail.com','V_gop7szQaTclrDlTqC7tfLxWrToI9wn',10,1502209348,1502703276,''),(2,'ngoc','0','0',0,0,0,'ngoc','$2y$13$Smbp5kKYCcSuNm4rAvl5i.33ss9Jp9w4UBxkf74dz.CIX8x2hz1eW','','vangoc93@gmail.com','DtJu_Epz4gwbQy8J6Xm8zC7jyrE6qmlL',10,1502212210,1502212210,''),(3,'tuan','0','0',0,0,0,'tuan','$2y$13$U.ygaNTSPjWRCTbIPHo23uP7M5tCjiDfpxHTSoQTrTmUJnXSJlFOK','','tuan@gmail.com','oJGTKfwYSZ1LcFD7uj3YKK9jGy8apPJF',10,1502212276,1502212276,'');
 
 /*Table structure for table `user_auth` */
 
@@ -256,21 +203,8 @@ CREATE TABLE `user_auth` (
   `client_user_id` varchar(100) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-/*Table structure for table `ward` */
-
-DROP TABLE IF EXISTS `ward`;
-
-CREATE TABLE `ward` (
-  `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `type` varchar(30) NOT NULL,
-  `location` varchar(30) NOT NULL,
-  `district_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `districtid` (`district_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*Data for the table `user_auth` */
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;

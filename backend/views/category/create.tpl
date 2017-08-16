@@ -4,7 +4,7 @@
   <div class="col-md-12">
     <div class="x_panel">
       <div class="x_title">
-        <h2>Create Category</h2>
+        <h2>{Yii::t('app', 'create_category')}</h2>
         <div class="clearfix"></div>
       </div>
       <div class="x_content">
