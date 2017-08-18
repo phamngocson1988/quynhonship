@@ -62,6 +62,20 @@ AppAsset::register($this);
                     </ul>
                   </li>
 
+                  <li><a><i class="fa fa-product-hunt"></i> Products <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="<?= Url::to(['product/index']) ?>">Products</a></li>
+                      <li><a href="<?= Url::to(['product/create']) ?>">Create</a></li>
+                    </ul>
+                  </li>
+
+                  <li><a><i class="fa fa-th-large"></i> Clients <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="<?= Url::to(['client/index']) ?>">Clients</a></li>
+                      <li><a href="<?= Url::to(['client/create']) ?>">Create</a></li>
+                    </ul>
+                  </li>
+
                   <li><a><i class="fa fa-users"></i> Users <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="<?= Url::to(['user/index']) ?>">Users</a></li>

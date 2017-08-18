@@ -374,6 +374,7 @@ function ImageManager(opts) {
         // Close model
         $(this.options.id).on('hide.bs.modal', function() {
             that.observer = null;
+            $(that.options.id).find('.thumbnail').removeClass('selected');
         });
 
         // OK function
